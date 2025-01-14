@@ -1,10 +1,13 @@
 {
+  "homepage": "https://rkatariag99.github.io/crud_app",
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
